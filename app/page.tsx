@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from "react-icons/fa";
-import Link from "next/link";
+import { FaInstagram, FaPinterest } from "react-icons/fa";
 
 import styles from "../styles/home.module.scss";
 import commonStyles from "../styles/common.module.scss";
@@ -10,19 +9,6 @@ import IntroOverlay from "../components/intro-overlay";
 import { projectsList } from "../utils/project-data";
 import ProjectListing from "../components/project-listing";
 import Logo from "../images/logo.jpeg";
-
-const blogPosts: { title: string; slug: string; date: string }[] = [
-  {
-    title: "Why I Don't Want to Work Remotely Early in My Career",
-    slug: "no-remote-early-in-my-career",
-    date: " January 3, 2024",
-  },
-  {
-    title: "Falling Out of Love with Twin Macro",
-    slug: "falling-out-of-love-with-twin-macro",
-    date: "December 29, 2023",
-  },
-];
 
 export default function Homepage() {
   return (
@@ -57,8 +43,7 @@ export default function Homepage() {
           >
             <h2>About Me</h2>
             <p>
-              Welcome, I am Khadija Butt  a passionate Graphic Designer.
-              I specialize in the art of logo design, branding, and template creation. With a unique blend of creativity and expertise, I bring your vision to life, crafting designs that speak volumes about your brand's identity. Whether it's a logo that captures your essence or templates that streamline your workflow, I am dedicated to delivering exceptional results tailored to your needs. Let's collaborate and turn your ideas into impactful visuals that leave a lasting impression.
+              Welcome, I am Khadija Butt, a passionate Graphic Designer. I specialize in the art of logo design, branding, and template creation. With a unique blend of creativity and expertise, I bring your vision to life, crafting designs that speak volumes about your brand&apos;s identity. Whether it&apos;s a logo that captures your essence or templates that streamline your workflow, I am dedicated to delivering exceptional results tailored to your needs. Let&apos;s collaborate and turn your ideas into impactful visuals that leave a lasting impression.
             </p>
           </section>
           <section className={styles.projectContainer} id="projects">
@@ -67,8 +52,8 @@ export default function Homepage() {
             </div>
 
             <div className={styles.projectListingsContainer}>
-              {projectsList.map((project) => (
-                <ProjectListing project={project} />
+              {projectsList.map((project, index) => (
+                <ProjectListing project={project} key={index} />
               ))}
             </div>
           </section>

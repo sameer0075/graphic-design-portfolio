@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaBehance, FaGithub, FaInstagram, FaLinkedin, FaPinterest } from "react-icons/fa";
+import { FaInstagram, FaPinterest } from "react-icons/fa";
 
 import styles from "../styles/header.module.scss";
 import commonStyles from "../styles/common.module.scss";

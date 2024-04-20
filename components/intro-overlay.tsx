@@ -2,11 +2,11 @@
 
 import { useSearchParams } from "next/navigation";
 import { useBallAnimation } from "../utils/hooks/use-ball-animation";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
 import styles from "../styles/intro-overlay.module.scss";
 
-export default function IntroOverlay() {
+function IntroOverlayComponent() {
   const [animationComplete, setAnimationComplete] = useState(false);
   const searchParams = useSearchParams();
   const back = searchParams?.get("back");
@@ -28,3 +28,11 @@ export default function IntroOverlay() {
     </div>
   );
 }
+
+export default function IntroOverlay() {
+  return (
+    <Suspense>
+      <IntroOverlayComponent />
+    </Suspense>
+  )
+} 
