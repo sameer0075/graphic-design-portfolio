@@ -41,7 +41,7 @@ export const projectsList: ProjectType[] = [
     tools: ["Adobe Illustrator", "Canva"],
   },
   {
-    name: "Blisful Bakes",
+    name: "Blissful Bakes",
     description:
       "Creating a Logo Of a Bakery filled with Delights of Homemade Sweets",
     image: BlisfulBakes,
