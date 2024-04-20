@@ -62,7 +62,7 @@ export const projectsList: ProjectType[] = [
     tools: ["Adobe Illustrator", "Canva"],
   },
   {
-    name: "Cofee Times",
+    name: "Coffee Times",
     description:
       "With eight captivating pages, this template brings the essence of coffee culture to life.",
     image: CofeeTimes,
