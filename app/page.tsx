@@ -41,7 +41,7 @@ export default function Homepage() {
               <div id="portraitContainer" className={styles.portraitContainer}>
                 <Image
                   src={Logo}
-                  alt="Portrait of Alexander Grattan"
+                  alt="Portrait of Khadija Butt"
                   className={styles.portrait}
                   priority
                 />
@@ -102,7 +102,7 @@ export default function Homepage() {
                 href="https://www.instagram.com/enchant_design_studio_223?igsh=MTY2MTlvbnhzenp4dQ=="
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Connect with Alexander on LinkedIn"
+                title="Connect with Khadija on LinkedIn"
               >
                 <FaInstagram />
                 <span className={commonStyles.hiddenText}>LinkedIn</span>
